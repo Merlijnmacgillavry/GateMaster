@@ -1,7 +1,7 @@
 
 import * as fs from 'fs';
 import { parse } from "dotenv";
-import { User } from './Models';
+import { User } from './models/user';
 
 let _sM: ServiceManager;
 

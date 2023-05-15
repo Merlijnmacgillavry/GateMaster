@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "description": "API Gateway service for authentication, authorization, and WebSocket proxying",
   "scripts": {
-    "start": "node dist/app.js",
-    "dev": "nodemon src/app.ts",
-    "build": "tsc",
-    "test": "echo \"No tests yet!\""
+    "start": "NODE_PATH=./build node build/index.js",
+    "build": "tsc -p .",
+    "dev": "nodemon src/app.ts"
   },
   "keywords": [
     "API",

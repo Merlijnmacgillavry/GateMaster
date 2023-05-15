@@ -1,11 +1,11 @@
 import express, { Request, Response, NextFunction } from 'express';
 import jwt from 'jsonwebtoken';
 import { getEnv } from '../env';
-import { getDb } from '../mongoDb';
+import { getDb } from '../mongoDbService';
 
 // Middleware for verifying JWT access token
 export const authenticateJWT = async (req: any, res: Response, next: NextFunction) => {
-    console.log(req.method, req.baseUrl, req.headers['upgrade']);
+    // console.log(req.method, req.baseUrl, req.headers['upgrade']);
     const jwtSecret = getEnv().jwtSecret
     const db = getDb();
 
