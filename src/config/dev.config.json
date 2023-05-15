@@ -1,0 +1,9 @@
+{
+    "services": [
+        {
+            "name": "FeathrTalk",
+            "endpoint": "http://localhost:8080/",
+            "refreshTime": "1d"
+        }
+    ]
+}
